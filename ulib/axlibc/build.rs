@@ -67,6 +67,8 @@ typedef struct {{
             "timeval",
             "pthread_.*",
             "epoll_event",
+            "pollfd",
+            "nfds_t",
             "iovec",
             "tm",
         ];

@@ -12,6 +12,7 @@ sys_includes = [
     "sys/socket.h",
     "sys/select.h",
     "sys/time.h",
+    "poll.h",
     "pthread.h",
 ]
 includes = ["axconfig.h"]
@@ -22,6 +23,7 @@ includes = ["axconfig.h"]
 "timespec" = "struct timespec"
 "timeval" = "struct timeval"
 "epoll_event" = "struct epoll_event"
+"pollfd" = "struct pollfd"
 "iovec" = "struct iovec"
 "tm" = "struct tm"
 

@@ -39,7 +39,7 @@ mod utils;
 mod fd_ops;
 #[cfg(feature = "fs")]
 mod file;
-#[cfg(any(feature = "select", feature = "epoll"))]
+#[cfg(any(feature = "select", feature = "epoll", feature = "poll"))]
 mod io_mpx;
 #[cfg(feature = "alloc")]
 mod malloc;
@@ -109,6 +109,9 @@ pub use self::pipe::ax_pipe;
 
 #[cfg(feature = "select")]
 pub use self::io_mpx::ax_select;
+
+#[cfg(feature = "poll")]
+pub use self::io_mpx::ax_poll;
 
 #[cfg(feature = "epoll")]
 pub use self::io_mpx::{ax_epoll_create, ax_epoll_ctl, ax_epoll_wait};

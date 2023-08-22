@@ -1,9 +1,9 @@
 #include <poll.h>
 #include <stdio.h>
 
-// TODO
+#include <axlibc.h>
+
 int poll(struct pollfd *__fds, nfds_t __nfds, int __timeout)
 {
-    unimplemented();
-    return 0;
+    return ax_poll(__fds, __nfds, __timeout);
 }

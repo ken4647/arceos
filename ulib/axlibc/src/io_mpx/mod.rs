@@ -9,8 +9,12 @@
 mod epoll;
 #[cfg(feature = "select")]
 mod select;
+#[cfg(feature = "poll")]
+mod poll;
 
 #[cfg(feature = "epoll")]
 pub use self::epoll::{ax_epoll_create, ax_epoll_ctl, ax_epoll_wait};
 #[cfg(feature = "select")]
 pub use self::select::ax_select;
+#[cfg(feature = "poll")]
+pub use self::poll::ax_poll;
