@@ -31,13 +31,16 @@ fp_simd = ["axstd/fp_simd"]
 # Memory
 alloc = ["axstd/alloc", "dep:axalloc"]
 
+# Random
+random-hw = []
+
 # Multi-task
 multitask = ["axstd/multitask", "axtask/multitask"]
 
 # File system
 fs = ["axstd/fs", "fd"]
 
-# Networking
+# Networking 
 net = ["axstd/net", "dep:axnet", "fd"]
 
 # Libc features
